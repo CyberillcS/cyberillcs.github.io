@@ -66,14 +66,28 @@ p {
 }
 
 .feature-container {
-  padding: 3rem 0;
+  display: inline-flex;
+  /* padding: 3rem 0;
+  display: flex;
   align-items: center;
-  text-align: center;
+  overflow: auto;
+  float: left; */
 }
 
 .feature-p {
   font-size: 1.3rem;
+  width: 500px;
+  text-align: center;
 }
-/* .feature-h {
-  display: inline-block;
-} */
+
+hr {
+  clear: both;
+}
+
+.feature-container2 {
+  /* padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  float: right; */
+}
