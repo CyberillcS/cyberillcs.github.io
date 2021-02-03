@@ -23,6 +23,11 @@ h4,
 h5,
 h6 {
   margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
 }
 
 #greeting {
@@ -50,7 +55,25 @@ h6 {
   color: #d4d4d4;
   position: absolute;
   visibility: hidden;
-  margin: 0;
   font-family: "Patrick Hand";
   font-size: 2rem;
 }
+
+#features {
+  background-color: #168700;
+  border-top: solid 3px;
+  border-color: rgb(34, 33, 33);
+}
+
+.feature-container {
+  padding: 3rem 0;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-p {
+  font-size: 1.3rem;
+}
+/* .feature-h {
+  display: inline-block;
+} */
