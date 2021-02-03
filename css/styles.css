@@ -1,6 +1,28 @@
+/*? all avilable fonts  */
+/* 
+font-family: 'Baloo Chettan 2', cursive;
+font-family: 'Londrina Solid', cursive;
+font-family: 'Pangolin', cursive;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
 @font-face {
   font-family: Minecraft;
-  src: url("C:\my_stuff\WebDevelopment\NoteBlockStudioWeb\css\fonts\MinecraftBold-nMK1.ttf");
+  src: url("fonts/MinecraftRegular-Bmg3.otf");
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 #greeting {
@@ -9,18 +31,26 @@
   text-align: center;
 }
 
-.description-left {
-  background-color: #477a1e;
-}
-
-.description-right {
-  background-color: #8fca5c;
+#collage {
+  background-color: #70b237;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
 }
 
 .note-block {
-  width: 100px;
-  height: 100px;
+  position: absolute;
+  width: 130px;
+  height: 130px;
 }
+
 .benefit-p {
-  color: #61371f;
+  color: #d4d4d4;
+  position: absolute;
+  visibility: hidden;
+  margin: 0;
+  font-family: "Patrick Hand";
+  font-size: 2rem;
 }
