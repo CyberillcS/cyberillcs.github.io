@@ -24,16 +24,25 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
 }
 
 p {
   margin: 0;
 }
 
+.align-right {
+  text-align: right;
+}
+
 #greeting {
   background-color: #70b237;
-  font-family: Minecraft;
   text-align: center;
+}
+
+.greeting-h {
+  font-family: Minecraft;
 }
 
 #collage {
@@ -51,7 +60,7 @@ p {
   height: 130px;
 }
 
-.benefit-p {
+.phrase-p {
   color: #d4d4d4;
   position: absolute;
   visibility: hidden;
@@ -61,33 +70,58 @@ p {
 
 #features {
   background-color: #168700;
-  border-top: solid 3px;
+  border-width: 3px 0;
+  border-style: solid;
   border-color: rgb(34, 33, 33);
 }
 
-.feature-container {
+.feature-container1 {
   display: inline-flex;
-  /* padding: 3rem 0;
-  display: flex;
+  flex-direction: row;
+  margin: 3rem 0;
   align-items: center;
-  overflow: auto;
-  float: left; */
+  background-color: #19b799;
+}
+
+.feature-container2 {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  margin: 3rem 0;
+  align-items: center;
+  background-color: #2fd0a7;
+}
+
+.feature-h {
+  margin: 0 30px;
+  text-align: center;
 }
 
 .feature-p {
   font-size: 1.3rem;
   width: 500px;
-  text-align: center;
 }
 
-hr {
-  clear: both;
+@media (min-width: 1285px) {
+  .flex-space-between {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-.feature-container2 {
-  /* padding: 3rem 0;
-  display: flex;
-  align-items: center;
-  overflow: auto;
-  float: right; */
+@media (max-width: 670px) {
+  .feature-container1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature-container2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature-p {
+    width: auto;
+  }
 }

@@ -5,7 +5,7 @@ function sleep(ms) {
 
 // circle objects using javascript
 async function phrasesCircle(){
-    let phrasesArr = document.querySelectorAll(".benefit-p");
+    let phrasesArr = document.querySelectorAll(".phrase-p");
     let angle = Math.PI / 2;
     let step = Math.PI * 2 / phrasesArr.length;
     let distance = 400;
@@ -25,6 +25,5 @@ async function phrasesCircle(){
         await sleep(appearDelta);
     }
 }
-
 
 phrasesCircle();
